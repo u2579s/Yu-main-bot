@@ -11,7 +11,9 @@ import logging
 import functools
 
 logging.basicConfig(
-    level=logging.INFO,
+    filename="bot/bot.log",
+    level=logging.INFO
+)
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("bot/bot.log", encoding="utf-8"),
